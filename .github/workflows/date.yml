@@ -17,7 +17,7 @@ jobs:
       - run: date
 
   depends:
-    needs: job1, job2, job3
+    needs: ubuntu, macos, windows
     runs-on: ubuntu-latest
     steps:
       - run: date
