@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0docker-compose -f ./docker-compose-local.yml up --build
       - name: Configure git
         run: |
           git config --global user.email "action@github.com"
